@@ -151,6 +151,135 @@ nav ul li a:hover {
 
 
 
+/* HightlightS */
+
+.highlights-section{
+  text-align:center;
+  padding:100px 0px;
+
+  p{
+    padding:0px 100px 100px 100px;
+     }
+
+  .headline-rocket::before{
+  content: url("../assets/icons/rocket-icon.png");
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  color:var(--secondary-color);
+  }
+}
+
+
+
+        /* Slider */
+
+.slider-radio{
+  width:99%;
+  height:529px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  overflow: hidden;
+    border-top-right-radius: 80px;
+  
+  input{
+    z-index:2;
+    margin:0px 5px 20px 5px;
+  }
+
+  input[type="radio"] {
+	transform: scale(1.5);
+  border:none;
+}
+
+.slider-contentbox{
+  backdrop-filter: blur(20px);
+  width: 70%;
+  margin:50px;
+  padding:20px;
+  color:#fff;
+  text-align: left;
+
+  .hightlights-slider-headline{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h2);
+    line-height: 100%;
+    padding:20px;
+  }
+  p{
+    padding:0px 20px;
+  }
+}
+
+}
+.slider-radio-wrapper{
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0px;
+  display: flex;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  
+}
+
+.slider-radio input[value="one"]:checked~.slider-radio-wrapper{
+  opacity: 1;
+}
+
+.slider-radio input[value="two"]:checked~.slider-radio-wrapper{
+  opacity: 1;
+}
+
+.slider-radio input[value="three"]:checked~.slider-radio-wrapper{
+  opacity: 1;
+}
+
+.slider-radio input[value="four"]:checked~.slider-radio-wrapper{
+  opacity: 1;
+}
+
+
+.slider-radio-element{
+  width:100%;
+  height: 100%;
+  position: absolute;
+
+  
+}
+
+.element-one{
+  background:url(../assets/img/top-beach-destinations-1.jpg) no-repeat center center /cover;
+}
+
+.element-two{
+  background:url(../assets/img/top-beach-destinations-2.jpg) no-repeat center center /cover;
+}
+
+.element-three{
+  background:url(../assets/img/top-beach-destinations-3.jpg) no-repeat center center /cover;
+}
+
+.element-four{
+  background:url(../assets/img/top-beach-destinations-4.jpg) no-repeat center center /cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive menu */
 
 .mobile-menu{
