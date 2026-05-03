@@ -66,17 +66,3 @@
 }
 
 
-h1{
-  font-family: var(--font-heading-article);
-  font-weight:700;
-  font-size:var(--font-size-h1);
-  margin-bottom:45px;
-}
-
-h2{
-  font-family: var(--font-heading-article);
-  font-weight:700;
-  font-size:var(--font-size-h2);
-  color: var(--primary-color);
-  margin-bottom:36px;
-}
