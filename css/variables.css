@@ -14,7 +14,7 @@
 /* Schriftarten */
 --font-body: 'Palanquin';
 --font-heading: 'Palanquin Dark';
---font-heading-article:font-family: 'Arima';
+--font-heading-article: 'Arima';
 
 /* Schriftgrößen */
 --font-size-xs: 15px;
@@ -41,6 +41,7 @@
 --spacing-md: 16px;
 --spacing-lg: 24px;
 --spacing-xl: 32px;
+--spacing-100: 100px;
 
 /* Border Radius */
 --radius-xs: 12px;
