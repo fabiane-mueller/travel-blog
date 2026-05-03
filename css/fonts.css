@@ -64,3 +64,19 @@
   font-weight: 700;
   src: url('../fonts/arima-v7-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+
+h1{
+  font-family: var(--font-heading-article);
+  font-weight:700;
+  font-size:var(--font-size-h1);
+  margin-bottom:45px;
+}
+
+h2{
+  font-family: var(--font-heading-article);
+  font-weight:700;
+  font-size:var(--font-size-h2);
+  color: var(--primary-color);
+  margin-bottom:36px;
+}
