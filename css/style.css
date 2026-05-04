@@ -96,6 +96,7 @@ nav ul li a:hover {
         background:url(../assets/img/hero-cappadocia.jpg) no-repeat center right / contain;
         border-bottom:30px solid #fff;
         height: 574px;
+        padding:0px;
     }
 
     .text-area{
@@ -300,8 +301,6 @@ nav ul li a:hover {
  
 }
 
-.accordion-item:last-of-type {
-}
 
 .accordion-header {
   display: flex;
@@ -439,12 +438,58 @@ form input{
   margin: 80px 0px 100px 0px;
 }
 
+
+/* Footer */
+
+footer{
+  background-color: var(--primary-color);
+  padding: 60px 0px;
+  
+
+  .content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer-logo-menu{
+    display: flex;
+    flex-direction: row;
+    gap:60px;
+    font-size: var(--font-size-sm);
+    color:#fff;
+    
+
+    a{
+      text-decoration: none;
+    }
+     a:hover{
+      font-weight: 600;
+    }
+  }
+
+  .social-links{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+  }
+  .copyright{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+}
+
+
 /* responsive menu */
 
 .mobile-menu{
     display:none;
     background:var(--secondary-color);
     width:100%;
+    position:fixed;
+    bottom:0px;
 
     ul{
     width: 100%;
@@ -467,12 +512,15 @@ form input{
   .content {
     max-width: 480px;
     min-width:320px;
-    padding:0px 5px;
+    padding:0px 20px;
   }
 
   .form-halb{
     flex-direction: column;
   }
+
+
+
 }
 
 /* Tablet */
@@ -497,6 +545,22 @@ form input{
   .mobile-menu{
     display:block;
   }
+
+  footer {
+  
+    padding:28px 0px 118px 0px;
+  
+  .footer-logo-menu{
+   width:100%;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap:10px;
+  }
+  .social-links{
+    align-items: flex-end;
+    gap:16px;
+  }
+}
 }
 
 /* Laptop */
