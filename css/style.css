@@ -11,6 +11,7 @@
   width: 100%;
   max-width: 1440px;
   height: 100%;
+  padding:0px 15px;
 }
 
 header,
@@ -95,6 +96,7 @@ nav ul li a:hover {
         background:url(../assets/img/hero-cappadocia.jpg) no-repeat center right / contain;
         border-bottom:30px solid #fff;
         height: 574px;
+        padding:0px;
     }
 
     .text-area{
@@ -151,12 +153,352 @@ nav ul li a:hover {
 
 
 
+/* HightlightS */
+
+.highlights-section{
+  text-align:center;
+  padding:100px 0px;
+
+  p{
+    padding:0px 100px 100px 100px;
+     }
+
+  .headline-rocket::before{
+  content: url("../assets/icons/rocket-icon.png");
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  color:var(--secondary-color);
+  }
+}
+
+
+
+        /* Slider */
+
+.slider-radio{
+  width:99%;
+  height:529px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  overflow: hidden;
+    border-top-right-radius: 80px;
+  
+  input{
+    z-index:2;
+    margin:0px 5px 20px 5px;
+  }
+
+  input[type="radio"] {
+	transform: scale(1.5);
+  border:none;
+}
+
+.slider-contentbox{
+  backdrop-filter: blur(20px);
+  width: 70%;
+  margin:50px;
+  padding:20px;
+  color:#fff;
+  text-align: left;
+
+  .hightlights-slider-headline{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-h2);
+    line-height: 100%;
+    padding:20px;
+  }
+  p{
+    padding:0px 20px;
+  }
+}
+
+}
+.slider-radio-wrapper{
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0px;
+  display: flex;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  
+}
+
+.slider-radio input[value="one"]:checked~.slider-radio-wrapper{
+  opacity: 1;
+}
+
+.slider-radio input[value="two"]:checked~.slider-radio-wrapper{
+  opacity: 1;
+}
+
+.slider-radio input[value="three"]:checked~.slider-radio-wrapper{
+  opacity: 1;
+}
+
+.slider-radio input[value="four"]:checked~.slider-radio-wrapper{
+  opacity: 1;
+}
+
+
+.slider-radio-element{
+  width:100%;
+  height: 100%;
+  position: absolute;
+
+  
+}
+
+.element-one{
+  background:url(../assets/img/top-beach-destinations-1.jpg) no-repeat center center /cover;
+}
+
+.element-two{
+  background:url(../assets/img/top-beach-destinations-2.jpg) no-repeat center center /cover;
+}
+
+.element-three{
+  background:url(../assets/img/top-beach-destinations-3.jpg) no-repeat center center /cover;
+}
+
+.element-four{
+  background:url(../assets/img/top-beach-destinations-4.jpg) no-repeat center center /cover;
+}
+
+
+
+        /* FAQ */
+
+.headline-question::before{
+  content: url("../assets/icons/icon-faq.png");
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  color:var(--secondary-color);
+  }
+.headline-question{
+  text-align: center;
+}
+
+/* Accordion*/
+.accordion {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.accordion-item {
+
+   background-color: var(--secondary-color);
+   border-radius: 15px;
+   margin: 30px 0px;
+   padding:15px;
+ 
+}
+
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  
+}
+
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 16px;
+  background-color: #fff;
+  border-radius: 15px;
+  
+}
+
+.accordion-content p {
+  
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+
+.accordion-item input {
+  display: none;
+}
+
+.accordion-item input:checked ~ .accordion-content {
+  max-height: 200px;
+  padding: 12px 16px;
+}
+
+.accordion-item input:checked + .accordion-header .icon {
+  transform: rotate(180deg);
+}
+
+
+/* Contact Form */
+
+
+
+.contact-form{
+  margin-top:100px;
+}
+
+.contact-contentbox{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  gap:0px;
+    p{
+      text-align:center;
+      max-width: 800px;
+      margin-bottom: 60px;
+  }
+}
+
+.headline-contact::before{
+  content: url("../assets/icons/person-pin.png");
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  color:var(--secondary-color);
+  }
+.headline-contact{
+  text-align: center;
+}
+
+
+form input{
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.help textarea{
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.form-halb{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap:50px;
+  margin-bottom: 60px;
+}
+
+.name label, .name input{
+  width: 100%;
+}
+
+.email label, .email input{
+  width: 100%;
+}
+
+.help label, .help textarea{
+  width: 100%;
+  display: block;
+}
+
+
+.checkbox{
+  font-size: 15px;
+  text-align: center;
+
+
+
+  a{ 
+    color: var(--primary-color);
+    text-decoration: none; 
+    font-weight: 400;   
+  }
+  a:hover{ 
+    font-weight: 600;
+  }
+}
+
+.contact-form .primary-button-outline{
+  text-align: center;
+  margin: 80px 0px 100px 0px;
+}
+
+
+
+/* artikel */
+
+.article-intro h1{
+    color: var(--secondary-color);
+}
+
+
+
+/* Footer */
+
+footer{
+  background-color: var(--primary-color);
+  padding: 60px 0px;
+  
+
+  .content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer-logo-menu{
+    display: flex;
+    flex-direction: row;
+    gap:60px;
+    font-size: var(--font-size-sm);
+    color:#fff;
+    
+
+    a{
+      text-decoration: none;
+    }
+     a:hover{
+      font-weight: 600;
+    }
+  }
+
+  .social-links{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+  }
+  .copyright{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+}
+
+
 /* responsive menu */
 
 .mobile-menu{
     display:none;
     background:var(--secondary-color);
     width:100%;
+    position:fixed;
+    bottom:0px;
 
     ul{
     width: 100%;
@@ -178,7 +520,16 @@ nav ul li a:hover {
 @media screen and (max-width: 480px) {
   .content {
     max-width: 480px;
+    min-width:320px;
+    padding:0px 20px;
   }
+
+  .form-halb{
+    flex-direction: column;
+  }
+
+
+
 }
 
 /* Tablet */
@@ -203,6 +554,22 @@ nav ul li a:hover {
   .mobile-menu{
     display:block;
   }
+
+  footer {
+  
+    padding:28px 0px 118px 0px;
+  
+  .footer-logo-menu{
+   width:100%;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap:10px;
+  }
+  .social-links{
+    align-items: flex-end;
+    gap:16px;
+  }
+}
 }
 
 /* Laptop */
