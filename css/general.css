@@ -13,6 +13,16 @@ h2 {
   margin-bottom: 36px;
 }
 
+h3 {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: var(--primary-color);
+  margin-bottom: 36px;
+}
+
 .primary-button {
   a {
     font-family: var(--font-heading-article);

@@ -12,6 +12,7 @@
   max-width: 1440px;
   height: 100%;
   padding:0px 15px;
+  padding:0px 15px;
 }
 
 header,
@@ -521,6 +522,16 @@ footer{
 
 
 
+    min-width:320px;
+    padding:0px 20px;
+  }
+
+  .form-halb{
+    flex-direction: column;
+  }
+
+
+
 }
 
 /* Tablet */
@@ -544,6 +555,23 @@ footer{
   }
   .mobile-menu{
     display:block;
+  }
+
+  footer {
+  
+    padding:28px 0px 118px 0px;
+  
+  .footer-logo-menu{
+   width:100%;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap:10px;
+  }
+  .social-links{
+    align-items: flex-end;
+    gap:16px;
+  }
+}
   }
 
   footer {
