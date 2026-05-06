@@ -100,7 +100,29 @@ h3 {
 
 
 
+/* Desktop */
+@media screen and (min-width: 1280px) {
 
+}
+
+
+
+/* Laptop */
+@media screen and (max-width: 1279px) {
+
+  
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 40px;
+    }
+
+}
 
 
 /* Smartphone */
@@ -110,25 +132,6 @@ h3 {
 
 }
 
-/* Tablet */
-@media screen and (max-width: 768px) {
- body{font-size:var(--font-size-sm);}
-    h1{
-        font-size: 40px;
-    }
-    h2{
-        font-size: 20px;
-    }
 
-}
 
-/* Laptop */
-@media screen and (max-width: 1279px) {
 
-  
-}
-
-/* Desktop */
-@media screen and (min-width: 1280px) {
-
-}
