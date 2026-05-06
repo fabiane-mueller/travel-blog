@@ -477,7 +477,7 @@ footer {
 @media screen and (max-width: 580px) {
   .hero {
     .content {
-      background-position: center right -372px;
+      background-position: right -372px center;
       height: 700px;
       .text-area {
         .yellow-area {
@@ -554,6 +554,8 @@ footer {
     }
   }
 
+}
+
   /* Laptop */
   @media screen and (max-width: 1279px) {
     .content {
@@ -570,6 +572,9 @@ footer {
           .text p {
             max-width: 18ch;
           }
+        }
+        .yellow-area{
+          width: 75%;
         }
       }
     }
