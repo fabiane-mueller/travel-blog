@@ -1,4 +1,4 @@
-/* header */
+/* #region header */
 
 header {
   width: 100%;
@@ -25,7 +25,9 @@ header {
   }
 }
 
-/* Menü */
+/* #endregion header */
+
+/* #region Menü */
 
 nav ul {
   display: flex;
@@ -52,7 +54,9 @@ nav ul li a:hover {
     contain;
 }
 
-/* Hero */
+/* #endregion */
+
+/* #region Hero */
 
 .hero {
   width: 100%;
@@ -131,7 +135,9 @@ nav ul li a:hover {
   }
 }
 
-/* HightlightS */
+/* #endregion */
+
+
 
 .highlights-section {
   text-align: center;
@@ -151,7 +157,7 @@ nav ul li a:hover {
   }
 }
 
-/* Slider */
+/* #region Slider */
 
 .slider-radio {
   width: 99%;
@@ -244,7 +250,9 @@ nav ul li a:hover {
     center / cover;
 }
 
-/* FAQ */
+/* #endregion */
+
+/* #region FAQ */
 
 .headline-question::before {
   content: url("../assets/icons/icon-faq.png");
@@ -313,8 +321,9 @@ nav ul li a:hover {
 .accordion-item input:checked + .accordion-header .icon {
   transform: rotate(180deg);
 }
+/* #endregion */
 
-/* Contact Form */
+/* #region Contact Form */
 
 .contact-form {
   margin-top: 100px;
@@ -397,8 +406,240 @@ form input {
   text-align: center;
   margin: 80px 0px 100px 0px;
 }
+/* #endregion */
 
-/* Footer */
+/* #region artikel */
+
+.article-intro {
+  margin-top: 60px;
+}
+
+.article-intro .content {
+  display: flex;
+  gap: 35px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 500px;
+}
+
+.intro-text p {
+  text-align: left;
+  font-size: var(--font-size-xl);
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+
+.article-feature {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  font-size: var(--font-size-sm);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.article-feature div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.autorenbox {
+  width: 272px;
+  font-size: var(--font-size-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dcede7;
+  padding: 35px 16px;
+  border-radius: 30px;
+  line-height: 120%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 272px;
+}
+.autorenbox .autorentitel {
+  font-size: 18px;
+  font-family: var(--font-heading-article);
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.autorenbox .autorentitel span {
+  font-weight: 700;
+}
+
+.beaches-list ul li::marker {
+  font-size: 12px;
+}
+
+/* #endregion */
+
+/* #region Carousel */
+
+.carousel-wrapper {
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  margin: 50px 100px;
+}
+
+.carousel-element {
+  z-index: 1;
+  height: 80%;
+  width: 300px;
+  background-color: blue;
+  transform: perspective(250px) rotateY(20deg) translateX(-20px);
+  transform-origin: 50% 50%;
+  box-shadow: -9px 5px 20px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.carousel-element:hover {
+  transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5)
+    scaleY(1.2);
+  z-index: 2;
+}
+.carousel-element:hover ~ .carousel-element {
+  transform: perspective(250px) rotateY(-20deg) translateX(20px);
+}
+
+.carousel input[value="one"]:checked ~ .carousel-wrapper {
+  transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5)
+    scaleY(1.2);
+  z-index: 2;
+}
+
+.carousel input[value="two"]:checked ~ .carousel-wrapper {
+  transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5)
+    scaleY(1.2);
+  z-index: 2;
+}
+
+.carousel input[value="three"]:checked ~ .carousel-wrapper {
+  transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5)
+    scaleY(1.2);
+  z-index: 2;
+}
+
+.carousel input[value="four"]:checked ~ .carousel-wrapper {
+  transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5)
+    scaleY(1.2);
+  z-index: 2;
+}
+
+.carousel-one {
+  background: url(../assets/img/top-beach-destinations-1.jpg) no-repeat center
+    center / cover;
+}
+
+.carousel-two {
+  background: url(../assets/img/top-beach-destinations-2.jpg) no-repeat center
+    center / cover;
+}
+
+.carousel-three {
+  background: url(../assets/img/top-beach-destinations-3.jpg) no-repeat center
+    center / cover;
+}
+
+.carousel-four {
+  background: url(../assets/img/top-beach-destinations-4.jpg) no-repeat center
+    center / cover;
+}
+
+.carousel-five {
+  background: url(../assets/img/top-beach-destinations-5.jpg) no-repeat center
+    center / cover;
+}
+
+/* #endregion */
+
+.top-beaches {
+  margin-top: 100px;
+}
+
+.top-beaches h3 {
+  text-align: center;
+}
+
+.top-beaches p {
+  margin: 80px 0px 40px 0px;
+}
+.beaches-list {
+  padding: 0px 100px;
+  align-items: flex-start;
+}
+.beaches-list p {
+  margin: 40px 0px;
+  text-align: left;
+}
+
+.beaches-list ol {
+  margin: 0px 30px;
+}
+.beaches-list li {
+  margin: 5px 0px;
+}
+
+.pro-tipps {
+  background-color: #dcede7;
+  padding: 20px 10px 10px 10px;
+  border-radius: 30px;
+  position: relative;
+  margin: 80px 0px;
+}
+.pro-tipps .pro-badge {
+  position: absolute;
+  left: -44px;
+  top: -50px;
+  transform: rotate(-13deg);
+}
+
+.share-button::before {
+  content: url("../assets/icons/share.png");
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  fill: var(--secondary-color);
+}
+
+/* #region follow-me */
+
+.follow-me {
+  margin-bottom: 50px;
+  position: relative;
+  max-width: 460px;
+  align-items: center;
+}
+
+.follow-me .arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+
+.follow-me p {
+  font-family: var(--font-heading-article);
+
+  text-align: center;
+}
+
+.follow-me .secondary-button a {
+  display: flex;
+  align-items: center;
+}
+
+/* #endregion */
+
+/* #region Footer */
 
 footer {
   background-color: var(--primary-color);
@@ -438,27 +679,7 @@ footer {
   }
 }
 
-/* responsive menu */
-
-.mobile-menu {
-  display: none;
-  background: var(--secondary-color);
-  width: 100%;
-  position: fixed;
-  bottom: 0px;
-
-  ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: var(--spacing-lg);
-  }
-
-  li {
-    list-style-type: none;
-  }
-}
+/* #endregion */
 
 /* responsive menu */
 
@@ -481,6 +702,29 @@ footer {
     list-style-type: none;
   }
 }
+
+/* #region responsive menu */
+
+.mobile-menu {
+  display: none;
+  background: var(--secondary-color);
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: var(--spacing-lg);
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+/* #endregion */
 
 /* Laptop */
 @media screen and (max-width: 1279px) {
@@ -607,7 +851,7 @@ footer {
     padding: 0px 20px;
   }
 
-  .hero .content{
+  .hero .content {
     overflow-y: hidden;
   }
 
@@ -642,6 +886,14 @@ footer {
   }
   footer .footer-logo-menu {
     gap: 5px;
+  }
+
+  .article-feature {
+    gap: 10px;
+  }
+  .autorenbox {
+    width: 100%;
+    flex-basis: auto;
   }
 }
 
