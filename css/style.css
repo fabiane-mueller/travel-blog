@@ -137,8 +137,6 @@ nav ul li a:hover {
 
 /* #endregion */
 
-
-
 .highlights-section {
   text-align: center;
   padding: 100px 0px;
@@ -159,95 +157,124 @@ nav ul li a:hover {
 
 /* #region Slider */
 
-.slider-radio {
-  width: 99%;
-  height: 529px;
+.slider_a{
+  position: relative;
+  width:100%;
+  height:533px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  flex-direction: row;
   overflow: hidden;
-  border-top-right-radius: 80px;
-
-  input {
-    z-index: 2;
-    margin: 0px 5px 20px 5px;
-  }
-
-  input[type="radio"] {
-    transform: scale(1.5);
-    border: none;
-  }
-
-  .slider-contentbox {
-    backdrop-filter: blur(20px);
-    width: 70%;
-    margin: 50px;
-    padding: 20px;
-    color: #fff;
-    text-align: left;
-
-    .hightlights-slider-headline {
-      font-family: var(--font-heading);
-      font-size: var(--font-size-h2);
-      line-height: 100%;
-      padding: 20px;
-    }
-    p {
-      padding: 0px 20px;
-    }
-  }
+  flex-direction: row;
+  border-top-right-radius: 50px;
+  margin: 50px 0px;
 }
-.slider-radio-wrapper {
-  width: 100%;
-  height: 100%;
+
+.slider_a input{
+  z-index:2;
+  margin:50px 2px;
+}
+
+.slider_a_wrapper{
+  z-index: 1;
+  width: 400%;
+  height:100%;
   position: absolute;
-  left: 0px;
   display: flex;
   transition: all 1s ease-in-out;
-  opacity: 0;
+  left:0px;
+  
+  
 }
 
-.slider-radio input[value="one"]:checked ~ .slider-radio-wrapper {
-  opacity: 1;
-}
-
-.slider-radio input[value="two"]:checked ~ .slider-radio-wrapper {
-  opacity: 1;
-}
-
-.slider-radio input[value="three"]:checked ~ .slider-radio-wrapper {
-  opacity: 1;
-}
-
-.slider-radio input[value="four"]:checked ~ .slider-radio-wrapper {
-  opacity: 1;
-}
-
-.slider-radio-element {
-  width: 100%;
+.slider_a_element{
+  width: calc(100% / 4);
   height: 100%;
-  position: absolute;
 }
 
-.element-one {
-  background: url(../assets/img/top-beach-destinations-1.jpg) no-repeat center
-    center / cover;
+
+.element_one{
+  background: url(../assets/img/top-beach-destinations-1.jpg) no-repeat center center / cover;
 }
 
-.element-two {
-  background: url(../assets/img/top-beach-destinations-2.jpg) no-repeat center
-    center / cover;
+.element_two{
+  background: url(../assets/img/top-beach-destinations-2.jpg) no-repeat center center / cover;
 }
 
-.element-three {
-  background: url(../assets/img/top-beach-destinations-3.jpg) no-repeat center
-    center / cover;
+.element_three{
+  background: url(../assets/img/top-beach-destinations-3.jpg) no-repeat center center / cover;
 }
 
-.element-four {
-  background: url(../assets/img/top-beach-destinations-4.jpg) no-repeat center
-    center / cover;
+.element_four{
+  background: url(../assets/img/top-beach-destinations-4.jpg) no-repeat center center / cover;
+}
+
+.slider_a input[value="one"]:checked~.slider_a_wrapper{
+  transform:translateX(0);
+}
+
+.slider_a input[value="two"]:checked~.slider_a_wrapper{
+  transform:translateX(-25%);
+}
+
+.slider_a input[value="three"]:checked~.slider_a_wrapper{
+  transform:translateX(-50%);
+}
+.slider_a input[value="four"]:checked~.slider_a_wrapper{
+  transform:translateX(-75%);
+}
+
+
+.slider_a input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+.slider_a input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  font: inherit;
+  color: currentColor;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  margin:30px 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.slider_a input[type="radio"]:checked{
+  background-color: var(--secondary-color);
+  width: 38px;
+  border-radius: 30px;
+}
+
+.slider-content{
+  backdrop-filter: blur(20px);
+  width: 70%;
+  margin:5% 25% 5% 5%;
+  padding:30px;
+}
+
+.slider-content h4{
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+  color: #fff;
+  font-weight: 600;
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+
+.slider-content p{
+color: #fff;
+font-size: var(--font-size-lg);
+line-height: 110%;
+font-weight: 400;
 }
 
 /* #endregion */
@@ -266,7 +293,7 @@ nav ul li a:hover {
   text-align: center;
 }
 
-/* Accordion*/
+/* #region Accordion*/
 .accordion {
   width: 100%;
   border-radius: 15px;
@@ -895,6 +922,22 @@ footer {
     width: 100%;
     flex-basis: auto;
   }
+
+.slider-content{
+  width: 90%;
+  margin:5%;
+  padding:30px;
+}
+
+.slider-content h4{
+  font-size: var(--font-size-lg);
+}
+
+.slider-content p{
+font-size: 20px;
+}
+
+
 }
 
 /* Desktop */
