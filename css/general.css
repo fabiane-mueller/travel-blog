@@ -5,6 +5,7 @@
   color: inherit;
   font-size: inherit;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 
 .content {
@@ -33,7 +34,6 @@ body {
   line-height: 110%;
 }
 
-
 #homepage h1 {
   font-family: var(--font-heading-article);
   font-weight: 700;
@@ -48,7 +48,6 @@ body {
   color: var(--primary-color);
   margin-bottom: 36px;
 }
-
 
 h1 {
   font-family: var(--font-heading-article);
@@ -66,8 +65,6 @@ h2 {
   line-height: 120%;
 }
 
-
-
 h3 {
   font-family: var(--font-heading-article);
   font-style: normal;
@@ -78,43 +75,48 @@ h3 {
   margin-bottom: 36px;
 }
 
+.icon-headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .primary-button {
   a {
     font-family: var(--font-heading-article);
     color: var(--primary-color);
     background-color: var(--secondary-color);
     border-radius: 40px;
-    padding:16px 60px;
+    padding: 16px 60px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.5s;
   }
-  a:hover{
-    text-shadow:var(--shadow-md);
+  a:hover {
+    text-shadow: var(--shadow-md);
     box-shadow: var(--shadow-md);
   }
 }
-
 
 .primary-button-outline {
   a {
     font-family: var(--font-heading-article);
     color: var(--text-color);
-    background:transparent;
+    background: transparent;
     border-radius: 40px;
-    border:1px solid #3D3D3D;
-    padding:16px 60px;
+    border: 1px solid #3d3d3d;
+    padding: 16px 60px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.5s;
   }
-  a:hover{
-    text-shadow:var(--shadow-md);
+  a:hover {
+    text-shadow: var(--shadow-md);
     box-shadow: var(--shadow-md);
   }
 }
 
-a.text-button{
+a.text-button {
   font-weight: 600;
   color: var(--primary-color);
   text-decoration: none;
@@ -126,50 +128,35 @@ a.text-button{
     color: var(--secondary-color);
     background-color: var(--primary-color);
     border-radius: 40px;
-    padding:16px 60px;
+    padding: 16px 60px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.5s;
   }
-  a:hover{
-    text-shadow:var(--shadow-md);
+  a:hover {
+    text-shadow: var(--shadow-md);
     box-shadow: var(--shadow-md);
   }
 }
 
-
 /* Desktop */
 @media screen and (min-width: 1280px) {
-
 }
-
-
 
 /* Laptop */
 @media screen and (max-width: 1279px) {
-
-  
 }
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-    h1{
-        font-size: 40px;
-    }
-    h2{
-        font-size: 40px;
-    }
-
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 40px;
+  }
 }
-
 
 /* Smartphone */
 @media screen and (max-width: 480px) {
-
-   
-
 }
-
-
-
-
